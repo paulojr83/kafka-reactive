@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    properties:
+      schema:
+        registry:
+          url: mock://
+    consumer:
+      auto-offset-reset: earliest
+      group-id: com.kafka.reactive
+test.topic: topic_Pzdt006DTO

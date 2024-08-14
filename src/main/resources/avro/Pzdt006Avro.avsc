@@ -1,0 +1,29 @@
+{
+  "type": "record",
+  "name": "Pzdt006Avro",
+  "namespace": "com.kafka.reactive.avro",
+  "fields": [
+    { "name": "CD_TRAN_RECB", "type": "string" },
+    { "name": "CD_QRCD_RECB", "type": "string" },
+    { "name": "TP_PESS_RECD", "type": "string" },
+    { "name": "NR_CPF_CNPJ_RECD", "type": "long" },
+    { "name": "NM_RECD", "type": "string" },
+    { "name": "CD_AGEN_RECD", "type": "int" },
+    { "name": "CD_CNTA_RECD", "type": "string" },
+    { "name": "TP_CNTA_RECD", "type": "string" },
+    { "name": "CD_ENDE_CADR_BACEN", "type": "string" },
+    { "name": "CD_FORM_INIC_PGTO", "type": "string" },
+    { "name": "DT_VENC_QRCD", "type": "string" },  // LocalDate mapped to string
+    { "name": "DH_ENVI_RECB_BACEN", "type": "string" },  // Instant mapped to string
+    { "name": "VL_ORIG_QRCD", "type": "string" },  // BigDecimal mapped to string
+    { "name": "VL_PGTO_INTT", "type": "string" },  // BigDecimal mapped to string
+    { "name": "TP_PESS_PGAD_ORIG", "type": "string" },
+    { "name": "NR_CPF_CNPJ_ORIG", "type": "long" },
+    { "name": "TP_PESS_PGAD", "type": "string" },
+    { "name": "NR_CPF_CNPJ_PGAD", "type": "long" },
+    { "name": "NM_PGAD", "type": "string" },
+    { "name": "TX_INFO_COMP_QRCD", "type": "string" },
+    { "name": "CD_SITU_OPER", "type": ["null", "int"], "default": null },
+    { "name": "CD_MOED_PGTO_INTT", "type": "string" }
+  ]
+}

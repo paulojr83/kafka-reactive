@@ -228,3 +228,34 @@ public class KafkaConsumerService {
 }
 
 ```
+
+### Exemplo do request
+```json
+curl --location 'localhost:8080/api/kafka/send' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "CD_TRAN_RECB": "TRX123",
+  "CD_QRCD_RECB": "QR001",
+  "TP_PESS_RECD": "F",
+  "NR_CPF_CNPJ_RECD": 12345678901,
+  "NM_RECD": "John Doe",
+  "CD_AGEN_RECD": 1234,
+  "CD_CNTA_RECD": "AC123456",
+  "TP_CNTA_RECD": "CC",
+  "CD_ENDE_CADR_BACEN": "pix@example.com",
+  "CD_FORM_INIC_PGTO": "ATM",
+  "DT_VENC_QRCD": "2023-08-10",
+  "DH_ENVI_RECB_BACEN": "2023-08-10T12:30:45.123456",
+  "VL_ORIG_QRCD": 100.00,
+  "VL_PGTO_INTT": 100.00,
+  "TP_PESS_PGAD_ORIG": "F",
+  "NR_CPF_CNPJ_ORIG": 98765432100,
+  "TP_PESS_PGAD": "F",
+  "NR_CPF_CNPJ_PGAD": 11223344556,
+  "NM_PGAD": "Jane Doe",
+  "TX_INFO_COMP_QRCD": "Payment for invoice 123",
+  "CD_SITU_OPER": 1,
+  "CD_MOED_PGTO_INTT": "BRL"
+}
+'
+```
